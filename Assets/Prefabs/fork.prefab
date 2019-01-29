@@ -20,7 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4076180863409952}
   - component: {fileID: 33649822473736832}
+  - component: {fileID: 65215793123713000}
   - component: {fileID: 23910629818191966}
+  - component: {fileID: 54712215246482272}
+  - component: {fileID: 114029684458808610}
   m_Layer: 0
   m_Name: fork
   m_TagString: Untagged
@@ -83,3 +86,47 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1944660051746226}
   m_Mesh: {fileID: 4300000, guid: af2c241b63789774cab89757e9f9d68d, type: 3}
+--- !u!54 &54712215246482272
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1944660051746226}
+  serializedVersion: 2
+  m_Mass: 0.2
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65215793123713000
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1944660051746226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.007425382, y: 0.0045765415, z: 0.046211272}
+  m_Center: {x: 0, y: -0.0003380047, z: -0.009121831}
+--- !u!114 &114029684458808610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1944660051746226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 
