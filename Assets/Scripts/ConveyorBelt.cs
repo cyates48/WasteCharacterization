@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ConveyorBelt : MonoBehaviour {
 
-    public float speed = 2f;
+    public float speed = 1f;
 
 	// Use this for initialization
 	void Start () {
@@ -12,13 +12,9 @@ public class ConveyorBelt : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
-    }
-
-    void onCollisionStay(Collision collision) {
-        float beltVelocity = speed * Time.deltaTime;
-        collision.gameObject.GetComponent<Rigidbody>().velocity = beltVelocity * transform.forward;
-        Debug.Log("weee");
+	void FixedUpdate () {
+        Rigidbody rigidbody = GetComponent<Rigidbody>();
+        rigidbody.position -= (transform.right * Time.deltaTime * 0.4f);
+        rigidbody.MovePosition(rigidbody.position + (transform.right * Time.deltaTime *0.4f));
     }
 }
