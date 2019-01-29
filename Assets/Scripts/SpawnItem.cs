@@ -5,11 +5,15 @@ using Random = System.Random;
 
 public class SpawnItem : MonoBehaviour {
 
-    public Transform fork;
+    public GameObject fork, glass_bottle;
+    public GameObject[] models;
+
+    public GameObject selector;
     Random lane_rnd = new Random();
     Random pref_rnd = new Random();
 	// Use this for initialization
 	void Start () {
+        models = { fork, glass_bottle };
         StartCoroutine(spawnItems());
 	}
 	
@@ -21,7 +25,8 @@ public class SpawnItem : MonoBehaviour {
     IEnumerator spawnItems() {
         while (true) {
             int lane = lane_rnd.Next(1, 3);
-            int prefab = pref_rnd.Next(1, 20);
+            selector = models[pref_rnd.Next(1, 2) - 1];
+            //Debug.Log(models[0]);
 
             if (lane == 1)
                 Instantiate(fork, new Vector3(-2.16f, 2.348f, -1.338f), Quaternion.identity);

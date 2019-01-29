@@ -656,6 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fork: {fileID: 0}
+  glass_bottle: {fileID: 0}
 --- !u!1 &247041712
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,7 +3208,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8e2a02ee705d54f9c8d5c182521705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fork: {fileID: 4076180863409952, guid: f2c613e44e507904db087af1692a0f18, type: 2}
+  fork: {fileID: 1944660051746226, guid: f2c613e44e507904db087af1692a0f18, type: 2}
+  glass_bottle: {fileID: 1072421268719108, guid: 25752cbc62b77af40abd3bd04d5f7e79,
+    type: 2}
 --- !u!4 &1171220353
 Transform:
   m_ObjectHideFlags: 0
