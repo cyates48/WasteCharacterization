@@ -1,0 +1,215 @@
+fileFormatVersion: 2
+guid: 93c036b85e833e748bab51c489e682d3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BackWall
+    100002: //RootNode
+    100004: CompostBin
+    100006: ConveyorBelt
+    100008: LandfilBin
+    100010: LeftTable
+    100012: Pipes
+    100014: RecycleBin
+    100016: RightTable
+    100018: Tent
+    400000: BackWall
+    400002: //RootNode
+    400004: CompostBin
+    400006: ConveyorBelt
+    400008: LandfilBin
+    400010: LeftTable
+    400012: Pipes
+    400014: RecycleBin
+    400016: RightTable
+    400018: Tent
+    2100000: carnvial_stripes_mat
+    2100002: wooden_table_mat
+    2100004: lambert1
+    2100006: compost_mat
+    2100008: poles_mat
+    2100010: metal_mat
+    2100012: conveyor_belt_mat
+    2100014: landfill_mat
+    2100016: recycle_mat
+    2100018: pipe_mat
+    2300000: BackWall
+    2300002: CompostBin
+    2300004: ConveyorBelt
+    2300006: LandfilBin
+    2300008: LeftTable
+    2300010: Pipes
+    2300012: RecycleBin
+    2300014: RightTable
+    2300016: Tent
+    3300000: BackWall
+    3300002: CompostBin
+    3300004: ConveyorBelt
+    3300006: LandfilBin
+    3300008: LeftTable
+    3300010: Pipes
+    3300012: RecycleBin
+    3300014: RightTable
+    3300016: Tent
+    4300000: LeftTable
+    4300002: CompostBin
+    4300004: BackWall
+    4300006: ConveyorBelt
+    4300008: Tent
+    4300010: LandfilBin
+    4300012: RecycleBin
+    4300014: RightTable
+    4300016: Pipes
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carnvial_stripes_mat
+    second: {fileID: 2100000, guid: 5e0f7e478f8d09f4a90c6bf3f2511553, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: compost_mat
+    second: {fileID: 2100000, guid: 98b6b0b2a2bbd30469e4522a3bf9fbb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: conveyor_belt_mat
+    second: {fileID: 2100000, guid: c25dba5a807afe4468e1658b875a98ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: cbdd47de4cca2b644b7525bc87bd60b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: landfill_mat
+    second: {fileID: 2100000, guid: 044d242c30fa30440b95db09b66fd13f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_mat
+    second: {fileID: 2100000, guid: 4036e9d862ec89540971b06791f5edca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pipe_mat
+    second: {fileID: 2100000, guid: 705945933be0138479b44a2bf545d254, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: poles_mat
+    second: {fileID: 2100000, guid: 9c7554a2493676a478ffe959be1d79bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: recycle_mat
+    second: {fileID: 2100000, guid: 0a1156b0154f0bc4a84932f50458942e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wooden_table_mat
+    second: {fileID: 2100000, guid: fe08d4c95758d934c9f9023f895f63c6, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: carnvial_stripes
+    second: {fileID: 2800000, guid: 6e2bdf8efeaac854382ab580e8c0e84c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: conveyor
+    second: {fileID: 2800000, guid: 27ed85780d6a51940b9dcdd4b7a0231a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2800000, guid: 2d020f53adcc78046a0d6720c81a0e12, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: woden_table
+    second: {fileID: 2800000, guid: edebfcda751c8094b86930f4885b29ce, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,7 +14,7 @@ public class ConveyorBelt : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         Rigidbody rigidbody = GetComponent<Rigidbody>();
-        rigidbody.position -= (transform.right * Time.deltaTime * 0.4f);
-        rigidbody.MovePosition(rigidbody.position + (transform.right * Time.deltaTime *0.4f));
+        rigidbody.position += (transform.right * Time.deltaTime * 0.4f);
+        rigidbody.MovePosition(rigidbody.position - (transform.right * Time.deltaTime *0.4f));
     }
 }
