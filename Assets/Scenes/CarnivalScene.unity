@@ -806,6 +806,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1776453383811676, guid: bdadbacb91a197d48aa1fad93144a39a,
     type: 2}
   m_PrefabInternal: {fileID: 845412289}
+--- !u!114 &300013291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 300013290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c5baafea1b28f4f8f6092893528d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameController: {fileID: 89997028}
+  gainPoints: 0
+--- !u!136 &300013292
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 300013290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.0071281404
+  m_Height: 0.013278938
+  m_Direction: 1
+  m_Center: {x: -0.000000013737008, y: 0.006639469, z: 0.0000000055879346}
 --- !u!54 &300013294
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2728,6 +2754,18 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0.0169
       objectReference: {fileID: 0}
+    - target: {fileID: 1345451828347930, guid: bdadbacb91a197d48aa1fad93144a39a, type: 2}
+      propertyPath: m_TagString
+      value: landfill
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776453383811676, guid: bdadbacb91a197d48aa1fad93144a39a, type: 2}
+      propertyPath: m_TagString
+      value: recycle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103275576711892, guid: bdadbacb91a197d48aa1fad93144a39a, type: 2}
+      propertyPath: m_TagString
+      value: compost
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdadbacb91a197d48aa1fad93144a39a, type: 2}
   m_IsPrefabAsset: 0
@@ -3722,6 +3760,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1103275576711892, guid: bdadbacb91a197d48aa1fad93144a39a,
     type: 2}
   m_PrefabInternal: {fileID: 845412289}
+--- !u!114 &1189870282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1189870281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c5baafea1b28f4f8f6092893528d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameController: {fileID: 89997028}
+  gainPoints: 0
+--- !u!136 &1189870283
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1189870281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.0071281404
+  m_Height: 0.015235732
+  m_Direction: 1
+  m_Center: {x: -0.000000013737008, y: 0.007617866, z: 0.0000000025611366}
 --- !u!54 &1189870285
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -13,11 +13,10 @@ public class GameController : MonoBehaviour {
     }
 
     public void DistributePoints(bool gainPoints) {
+        Debug.Log(totalPoints);
         if (gainPoints)
             totalPoints += 5;
         else
             totalPoints -= 5;
-        
-        Debug.Log(totalPoints);
     }
 }

@@ -19,11 +19,11 @@ public class BinController : MonoBehaviour {
 
     // Call the check function when item enters a bin
 	void OnTriggerEnter(Collider item) {
-        if (gameObject.tag == "LandfillBin" && item.tag == "landfill")
+        if (gameObject.tag == "landfill" && item.tag == "landfill")
             gainPoints = true;
-        else if (gameObject.tag == "RecycleBin" && item.tag == "recycle")
+        else if (gameObject.tag == "recycle" && item.tag == "recycle")
             gainPoints = true;
-        else if (gameObject.tag == "CompostBin" && item.tag == "compost")
+        else if (gameObject.tag == "compost" && item.tag == "compost")
             gainPoints = true;
         else
             gainPoints = false;
