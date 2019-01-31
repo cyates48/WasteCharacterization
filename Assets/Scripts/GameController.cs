@@ -5,12 +5,19 @@ using Random = System.Random;
 
 public class GameController : MonoBehaviour {
 
+    public int totalPoints;
+
     // Use this for initialization
     void Start () {
-
+        totalPoints = 0;
     }
 
-    public void OnBinEntered() {
-
+    public void DistributePoints(bool gainPoints) {
+        if (gainPoints)
+            totalPoints += 5;
+        else
+            totalPoints -= 5;
+        
+        Debug.Log(totalPoints);
     }
 }

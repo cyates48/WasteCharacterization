@@ -5,6 +5,7 @@ using UnityEngine;
 public class BinController : MonoBehaviour {
 
 	public GameObject gameController;
+    public bool gainPoints;
 
 	// Use this for initialization
 	void Start () {
@@ -16,7 +17,17 @@ public class BinController : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter(Collider other) {
-		gameController.GetComponent<GameController>().OnBinEntered();
+    // Call the check function when item enters a bin
+	void OnTriggerEnter(Collider item) {
+        if (gameObject.tag == "LandfillBin" && item.tag == "landfill")
+            gainPoints = true;
+        else if (gameObject.tag == "RecycleBin" && item.tag == "recycle")
+            gainPoints = true;
+        else if (gameObject.tag == "CompostBin" && item.tag == "compost")
+            gainPoints = true;
+        else
+            gainPoints = false;
+
+        gameController.GetComponent<GameController>().DistributePoints(gainPoints);
 	}
 }
