@@ -21,6 +21,9 @@ GameObject:
   - component: {fileID: 4431675256874776}
   - component: {fileID: 33833801784548230}
   - component: {fileID: 23813589427424320}
+  - component: {fileID: 114533432354063758}
+  - component: {fileID: 54141243505784538}
+  - component: {fileID: 65805676928895860}
   m_Layer: 0
   m_Name: glass_bottle
   m_TagString: Untagged
@@ -35,7 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1009380477727946}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.001, z: 0}
+  m_LocalPosition: {x: 1.3993732, y: 0.90346, z: -1.2209404}
+  m_LocalScale: {x: 1.7210313, y: 1.7210313, z: 1.7210313}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -82,12 +86,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1009380477727946}
   m_Mesh: {fileID: 4300000, guid: dd1075bcfe003dd4196137bb236d7f3b, type: 3}
---- !u!54 &54689346405549888
+--- !u!54 &54141243505784538
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1072421268719108}
+  m_GameObject: {fileID: 1009380477727946}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -97,24 +101,41 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65748584525598034
+--- !u!65 &65805676928895860
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1072421268719108}
+  m_GameObject: {fileID: 1009380477727946}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.038899865, y: 0.13715163, z: 0.038899865}
-  m_Center: {x: 0, y: 0.06852603, z: 0}
+  m_Size: {x: 0.03889987, y: 0.13715164, z: 0.03889987}
+  m_Center: {x: 0, y: 0.06852604, z: 0}
 --- !u!114 &114225705802672212
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1072421268719108}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 
+--- !u!114 &114533432354063758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1009380477727946}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
