@@ -655,8 +655,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8e2a02ee705d54f9c8d5c182521705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fork: {fileID: 0}
-  glass_bottle: {fileID: 0}
+  trash_items: []
+  lane_locations: []
 --- !u!1 &247041712
 GameObject:
   m_ObjectHideFlags: 0
@@ -2494,31 +2494,31 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.504
+      value: 1.322
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -3.357
+      value: -3.16
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.0014676141
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9999989
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_RootOrder
@@ -2535,6 +2535,10 @@ Prefab:
     - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: HmdRotatesY
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.16800001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
@@ -3208,9 +3212,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8e2a02ee705d54f9c8d5c182521705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fork: {fileID: 1944660051746226, guid: f2c613e44e507904db087af1692a0f18, type: 2}
-  glass_bottle: {fileID: 1072421268719108, guid: 25752cbc62b77af40abd3bd04d5f7e79,
-    type: 2}
+  trash_items:
+  - {fileID: 1944660051746226, guid: f2c613e44e507904db087af1692a0f18, type: 2}
+  - {fileID: 1009380477727946, guid: 25752cbc62b77af40abd3bd04d5f7e79, type: 2}
+  - {fileID: 1098042966377594, guid: 31e104b4f9525e54bae9861aa6818f8b, type: 2}
+  lane_locations:
+  - {x: -2.16, y: 2.348, z: -1.338}
+  - {x: -2.16, y: 2.348, z: -1.047}
+  - {x: -2.16, y: 2.348, z: -0.78}
 --- !u!4 &1171220353
 Transform:
   m_ObjectHideFlags: 0
@@ -4336,6 +4345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1809586552}
   - component: {fileID: 1809586553}
+  - component: {fileID: 1809586554}
   m_Layer: 0
   m_Name: DistanceGrabberSampleScript
   m_TagString: Untagged
@@ -4370,6 +4380,21 @@ MonoBehaviour:
   m_grabbers:
   - {fileID: 221620271}
   - {fileID: 818659478}
+--- !u!54 &1809586554
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809586551}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &1847338573 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4516155474071658, guid: 8f4f312dac6724ad7ba0c8c3d9ab3b03,
@@ -5279,5 +5304,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
