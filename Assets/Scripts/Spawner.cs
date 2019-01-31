@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
 
-public class SpawnItem : MonoBehaviour {
+public class Spawner : MonoBehaviour {
 
     public GameObject[] trash_items;
     public Vector3[] lane_locations;
@@ -24,3 +24,8 @@ public class SpawnItem : MonoBehaviour {
         }
     }
 }
+
+// Lane Location vectors
+// -2.16f, 2.348f, -1.411f
+// -2.16f, 2.348f, -1.047f
+// -2.16f, 2.348f, -0.66f
