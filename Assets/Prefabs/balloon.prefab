@@ -23,8 +23,9 @@ GameObject:
   - component: {fileID: 23761573304189952}
   - component: {fileID: 54453867939877348}
   - component: {fileID: 65473759677418042}
+  - component: {fileID: 114669980753107726}
   m_Layer: 0
-  m_Name: baloon
+  m_Name: balloon
   m_TagString: landfill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,3 +115,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.21262461, y: 0.051035203, z: 0.14851247}
   m_Center: {x: -0.0034081521, y: 0.0023931246, z: 0.0012567899}
+--- !u!114 &114669980753107726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1065836402973198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 

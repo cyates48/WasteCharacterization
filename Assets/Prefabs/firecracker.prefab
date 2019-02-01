@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 23725739894818548}
   - component: {fileID: 65839254917043632}
   - component: {fileID: 54555562629581676}
+  - component: {fileID: 114947362874160834}
   m_Layer: 0
   m_Name: firecracker
-  m_TagString: Untagged
+  m_TagString: landfill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,3 +116,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.050617993, y: 0.28030968, z: 0.050618}
   m_Center: {x: 0.0000000037252907, y: 0.15102133, z: -0.0000000046566133}
+--- !u!114 &114947362874160834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1476003929520634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 

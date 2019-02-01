@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23452673414309202}
   - component: {fileID: 54499881866085612}
   - component: {fileID: 65649856934487662}
+  - component: {fileID: 114444189544833942}
   m_Layer: 0
   m_Name: mug
   m_TagString: landfill
@@ -112,3 +113,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1563693, y: 0.11292121, z: 0.11180843}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114444189544833942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1628263131554180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 
