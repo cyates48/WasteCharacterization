@@ -3674,7 +3674,12 @@ MonoBehaviour:
   trash_items:
   - {fileID: 1944660051746226, guid: f2c613e44e507904db087af1692a0f18, type: 2}
   - {fileID: 1009380477727946, guid: 25752cbc62b77af40abd3bd04d5f7e79, type: 2}
-  - {fileID: 1098042966377594, guid: 31e104b4f9525e54bae9861aa6818f8b, type: 2}
+  - {fileID: 1332140394383312, guid: d2bebbeab7b678b49b7ade282cb961b0, type: 2}
+  - {fileID: 1065836402973198, guid: 1caae4c93992f7741b2e42518b0f5a9e, type: 2}
+  - {fileID: 1775600462448626, guid: 5e480530653b3e443bb835ca62f41f9e, type: 2}
+  - {fileID: 1294875305673160, guid: 3587e7310519e9e48b02eca1b160117c, type: 2}
+  - {fileID: 1628263131554180, guid: e02403180a984a84289ee7e0e468a74b, type: 2}
+  - {fileID: 1376676171891482, guid: ba114eae70dc8714ebab495a3fe61fa6, type: 2}
   lane_locations:
   - {x: -2.385, y: 2.961, z: -4.431731}
   - {x: -2.385, y: 2.961, z: -3.893863}
