@@ -15,7 +15,7 @@ public class ConveyorBelt : MonoBehaviour {
 	void OnCollisionStay(Collision col) {
 		Rigidbody trash_rb = col.gameObject.GetComponent<Rigidbody>();
 		Vector3[] lane_locs = spawner.GetComponent<Spawner>().lane_locations;
-		trash_rb.velocity = new Vector3(speed, 0f, 0f);
+		trash_rb.velocity = new Vector3(.3f, 0f, 0f);
 
 		int closestlane = -1;
 		float closestdist = 999999;

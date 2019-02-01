@@ -19,7 +19,9 @@ public class BinController : MonoBehaviour {
 
     // Call the check function when item enters a bin
 	void OnTriggerEnter(Collider item) {
-        if (gameObject.tag == "landfill" && item.tag == "landfill")
+        if (item.name=="DetectGrabRange" || item.name=="GrabVolumeCone" || item.name=="GrabVolumeSmall" || item.name=="GrabVolumeBig" || item.name=="OVRPlayerController")
+            return;
+        else if (gameObject.tag == "landfill" && item.tag == "landfill")
             gainPoints = true;
         else if (gameObject.tag == "recycle" && item.tag == "recycle")
             gainPoints = true;
