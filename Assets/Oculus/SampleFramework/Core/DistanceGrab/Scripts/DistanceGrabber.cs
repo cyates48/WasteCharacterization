@@ -141,10 +141,16 @@ namespace OculusSampleFramework
             DistanceGrabbable closestGrabbable = m_target;
             Collider closestGrabbableCollider = m_targetCollider;
 
+            // CY code
+            GameObject canvas = closestGrabbable.transform.GetChild(0).gameObject;
+
             GrabVolumeEnable(false);
 
             if (closestGrabbable != null)
             {
+                // CY code
+                canvas.GetComponent<Canvas>().enabled = true;
+
                 if (closestGrabbable.isGrabbed)
                 {
                     ((DistanceGrabber)closestGrabbable.grabbedBy).OffhandGrabbed(closestGrabbable);
