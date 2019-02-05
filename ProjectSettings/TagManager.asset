@@ -8,6 +8,7 @@ TagManager:
   - recycle
   - compost
   - score
+  - ground
   layers:
   - Default
   - TransparentFX

@@ -7,9 +7,15 @@ public class ConveyorBelt : MonoBehaviour {
     public float speed = 1f;
     public GameObject spawner;
 
+    int obj_counter;
+
 	// Use this for initialization
 	void Start () {
-		
+		obj_counter = 0;
+	}
+
+	void OnCollisionEnter(Collision col) {
+		obj_counter++;
 	}
 	
 	void OnCollisionStay(Collision col) {
@@ -28,5 +34,13 @@ public class ConveyorBelt : MonoBehaviour {
 		}
 
 		trash_rb.position = new Vector3(trash_rb.position.x, trash_rb.position.y, lane_locs[closestlane].z);
+	}
+
+	void OnCollisionExit(Collision col) {
+		obj_counter--;
+	}
+
+	public bool AreObjectsOnBelt() {
+		return obj_counter > 0;
 	}
 }
