@@ -3572,7 +3572,6 @@ MonoBehaviour:
   - {fileID: 1376676171891482, guid: ba114eae70dc8714ebab495a3fe61fa6, type: 2}
   - {fileID: 1294875305673160, guid: 3587e7310519e9e48b02eca1b160117c, type: 2}
   - {fileID: 1628263131554180, guid: e02403180a984a84289ee7e0e468a74b, type: 2}
-  - {fileID: 1686194859286178, guid: 4ff5bf29f10cd744c9bb77bc3238cfe6, type: 2}
   lane_locations:
   - {x: -2.385, y: 2.961, z: -4.431731}
   - {x: -2.385, y: 2.961, z: -3.893863}
