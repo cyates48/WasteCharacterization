@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 54361637833746666}
   - component: {fileID: 65766493992023708}
   - component: {fileID: 114906472360067078}
+  - component: {fileID: 114624554526152162}
   m_Layer: 0
   m_Name: chicken
   m_TagString: compost
@@ -389,6 +390,18 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
   m_Text: 
+--- !u!114 &114624554526152162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1294875305673160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d00d4ecfeb0e8b4588d82ca818423ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 114906472360067078}
 --- !u!114 &114851483611774870
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 65797553213349898}
   - component: {fileID: 54135162635317362}
   - component: {fileID: 114095931946950564}
+  - component: {fileID: 114764221148238830}
   m_Layer: 0
   m_Name: aspirin
   m_TagString: landfill
@@ -378,6 +379,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114764221148238830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1332140394383312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d00d4ecfeb0e8b4588d82ca818423ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 114095931946950564}
 --- !u!114 &114886425575960116
 MonoBehaviour:
   m_ObjectHideFlags: 1

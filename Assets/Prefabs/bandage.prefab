@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 65508769483283842}
   - component: {fileID: 54596534014057170}
   - component: {fileID: 114715218741552344}
+  - component: {fileID: 114978335358647004}
   m_Layer: 0
   m_Name: bandage
   m_TagString: landfill
@@ -426,6 +427,18 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
   m_Text: 
+--- !u!114 &114978335358647004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1775600462448626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d00d4ecfeb0e8b4588d82ca818423ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 114715218741552344}
 --- !u!222 &222881098158940576
 CanvasRenderer:
   m_ObjectHideFlags: 1

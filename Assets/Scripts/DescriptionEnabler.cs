@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using OculusSampleFramework;
 
 public class DescriptionEnabler : MonoBehaviour {
 
-    public GameObject item;
+    public DistanceGrabbable item;
 
 	// Use this for initialization
 	void Start () { 

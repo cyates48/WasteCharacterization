@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 65922279427951670}
   - component: {fileID: 54535385679364696}
   - component: {fileID: 114433582447584874}
+  - component: {fileID: 114817437903703154}
   m_Layer: 0
   m_Name: lightbulb
   m_TagString: landfill
@@ -400,6 +401,18 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
   m_Text: 
+--- !u!114 &114817437903703154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098042966377594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d00d4ecfeb0e8b4588d82ca818423ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 114433582447584874}
 --- !u!114 &114988335221799124
 MonoBehaviour:
   m_ObjectHideFlags: 1

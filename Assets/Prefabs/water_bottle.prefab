@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 65587037118426864}
   - component: {fileID: 54052386744600928}
   - component: {fileID: 114925268459124008}
+  - component: {fileID: 114270073745434570}
   m_Layer: 0
   m_Name: water_bottle
   m_TagString: recycle
@@ -327,6 +328,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114270073745434570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1376676171891482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d00d4ecfeb0e8b4588d82ca818423ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 114925268459124008}
 --- !u!114 &114453093622614944
 MonoBehaviour:
   m_ObjectHideFlags: 1

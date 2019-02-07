@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 54453867939877348}
   - component: {fileID: 65473759677418042}
   - component: {fileID: 114669980753107726}
+  - component: {fileID: 114621856138605454}
   m_Layer: 0
   m_Name: balloon
   m_TagString: landfill
@@ -247,6 +248,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.21262461, y: 0.051035203, z: 0.14851247}
   m_Center: {x: -0.0034081521, y: 0.0023931246, z: 0.0012567899}
+--- !u!114 &114621856138605454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1065836402973198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d00d4ecfeb0e8b4588d82ca818423ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}
 --- !u!114 &114669980753107726
 MonoBehaviour:
   m_ObjectHideFlags: 1

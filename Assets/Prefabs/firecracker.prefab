@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 65839254917043632}
   - component: {fileID: 54555562629581676}
   - component: {fileID: 114947362874160834}
+  - component: {fileID: 114535592679553842}
   m_Layer: 0
   m_Name: firecracker
   m_TagString: landfill
@@ -335,6 +336,18 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114535592679553842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1476003929520634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d00d4ecfeb0e8b4588d82ca818423ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 114947362874160834}
 --- !u!114 &114735583000517228
 MonoBehaviour:
   m_ObjectHideFlags: 1
