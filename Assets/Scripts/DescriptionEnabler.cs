@@ -6,22 +6,27 @@ using OculusSampleFramework;
 public class DescriptionEnabler : MonoBehaviour {
 
     public DistanceGrabbable item;
+    Transform m_centerEyeAnchor;
 
 	// Use this for initialization
 	void Start () { 
-        
+        m_centerEyeAnchor = GameObject.Find("CenterEyeAnchor").transform;
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        GameObject canvas = item.transform.GetChild(0).gameObject;
+        Canvas canvas = item.GetComponentInChildren<Canvas>();
 
         if (item.isGrabbed)
         {
-            canvas.GetComponent<Canvas>().enabled = true;
+            canvas.enabled = true;
         }
         else
-            canvas.GetComponent<Canvas>().enabled = false;
+            canvas.enabled = false;
+
+        RectTransform rtransform = canvas.GetComponent<RectTransform>();
+        rtransform.LookAt(m_centerEyeAnchor);
+        rtransform.rotation = Quaternion.LookRotation(rtransform.position - m_centerEyeAnchor.position);
     }
 }

@@ -47,6 +47,7 @@ public class GameController : MonoBehaviour {
 
     void UpdateTimerText() {
         int seconds = (int) time_left;
+        if (seconds < 0) seconds = 0;
         text_time.text = string.Format("{0:D2}:{1:D2}", seconds / 60, seconds % 60);
     }
 
