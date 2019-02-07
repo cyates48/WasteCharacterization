@@ -13,6 +13,8 @@ public class GameController : MonoBehaviour {
     public ConveyorBelt conveyorBelt;
     private Text text_score;
     public GameObject completeText;
+    public GameObject timeObj;
+    private Text text_time;
 
     enum GameState {
     	InProgress,
@@ -25,18 +27,27 @@ public class GameController : MonoBehaviour {
     void Start () {
         totalPoints = 0;
         text_score = score.GetComponent<Text>();
+        text_score.text = "0";
+        text_time = timeObj.GetComponent<Text>();
         gameState = GameState.InProgress;
+        UpdateTimerText();
     }
 
     void Update () {
         text_score.text = totalPoints.ToString();
         time_left -= Time.deltaTime;
+        UpdateTimerText();
         if (gameState == GameState.InProgress && time_left <= 0) {
         	StopSpawning();
         }
         else if (gameState == GameState.Ending && !conveyorBelt.AreObjectsOnBelt()) {
         	EndLevel();
         }
+    }
+
+    void UpdateTimerText() {
+        int seconds = (int) time_left;
+        text_time.text = string.Format("{0:D2}:{1:D2}", seconds / 60, seconds % 60);
     }
 
     public void DistributePoints(bool gainPoints) {
