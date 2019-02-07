@@ -9,6 +9,8 @@ public class Spawner : MonoBehaviour {
     public Vector3[] lane_locations;
     Random rng;
 
+    string[] trash_types = {"landfill", "recycle", "compost"};
+
     // Use this for initialization
     void Start () {
     	rng = new Random();
@@ -17,8 +19,14 @@ public class Spawner : MonoBehaviour {
 
     IEnumerator spawnItems() {
         while (true) {
+            string type = trash_types[rng.Next(trash_types.Length)];
             Vector3 lane_location = lane_locations[rng.Next(lane_locations.Length)];
-            GameObject item = trash_items[rng.Next(trash_items.Length)];
+            
+            GameObject item;
+            do {
+                item = trash_items[rng.Next(trash_items.Length)];
+            } while (item.tag != type);
+            
             Instantiate(item, lane_location, Quaternion.identity);
             yield return new WaitForSeconds(2f);
         }
