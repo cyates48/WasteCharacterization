@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class ConveyorBelt : MonoBehaviour {
 
-    public float speed = 1f;
+	public float speed;
+    public float texture_speed;
     public GameObject spawner;
+    public Material conveyor_mat;
 
     int obj_counter;
 
 	// Use this for initialization
 	void Start () {
 		obj_counter = 0;
+	}
+
+	void Update() {
+		Vector2 new_offset = conveyor_mat.mainTextureOffset;
+		new_offset.x -= texture_speed;
+		conveyor_mat.mainTextureOffset = new_offset;
 	}
 
 	void OnCollisionEnter(Collision col) {
@@ -21,7 +29,7 @@ public class ConveyorBelt : MonoBehaviour {
 	void OnCollisionStay(Collision col) {
 		Rigidbody trash_rb = col.gameObject.GetComponent<Rigidbody>();
 		Vector3[] lane_locs = spawner.GetComponent<Spawner>().lane_locations;
-		trash_rb.velocity = new Vector3(.5f, 0f, 0f);
+		trash_rb.velocity = speed * new Vector3(.5f, 0f, 0f);
 
 		int closestlane = -1;
 		float closestdist = 999999;
