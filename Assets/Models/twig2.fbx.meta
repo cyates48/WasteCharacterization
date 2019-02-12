@@ -1,33 +1,16 @@
 fileFormatVersion: 2
-guid: 05b3708ead17a6d4d9cd5c9df4231c9a
+guid: 52ab884655baa6a46a43e722a153a8d6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: pasted__pasted__pCylinder1
-    100002: pasted__pCylinder1
-    100004: pCylinder1
-    100006: pCylinder2
-    100008: //RootNode
-    400000: pasted__pasted__pCylinder1
-    400002: pasted__pCylinder1
-    400004: pCylinder1
-    400006: pCylinder2
-    400008: //RootNode
+    100000: //RootNode
+    400000: //RootNode
     2100000: lambert4
     2100002: lambert2
     2100004: phong1
-    2300000: pasted__pasted__pCylinder1
-    2300002: pasted__pCylinder1
-    2300004: pCylinder1
-    2300006: pCylinder2
-    3300000: pasted__pasted__pCylinder1
-    3300002: pasted__pCylinder1
-    3300004: pCylinder1
-    3300006: pCylinder2
-    4300000: pasted__pasted__pCylinder1
-    4300002: pasted__pCylinder1
-    4300004: pCylinder1
-    4300006: pCylinder2
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pasted__pCylinder2
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -1,62 +1,18 @@
 fileFormatVersion: 2
-guid: e848e7f0061d5d94285704a1f037059e
+guid: 801e8063c7846c8458dad38daebf13e8
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: group5
-    100002: //RootNode
-    100004: pasted__pasted__pasted__pSphere4
-    100006: pasted__pasted__pSphere4
-    100008: pasted__pCylinder3
-    100010: pasted__pSphere4
-    100012: pCylinder3
-    100014: pCylinder4
-    100016: pSphere3
-    100018: pSphere4
-    400000: group5
-    400002: //RootNode
-    400004: pasted__pasted__pasted__pSphere4
-    400006: pasted__pasted__pSphere4
-    400008: pasted__pCylinder3
-    400010: pasted__pSphere4
-    400012: pCylinder3
-    400014: pCylinder4
-    400016: pSphere3
-    400018: pSphere4
-    2100000: phong1
-    2100002: phong4
-    2100004: phong2
-    2100006: phong3
-    2100008: phong5
-    2100010: lambert3
-    2100012: lambert1
-    2100014: lambert7
-    2100016: lambert5
-    2100018: lambert8
-    2300000: pasted__pasted__pasted__pSphere4
-    2300002: pasted__pasted__pSphere4
-    2300004: pasted__pCylinder3
-    2300006: pasted__pSphere4
-    2300008: pCylinder3
-    2300010: pCylinder4
-    2300012: pSphere3
-    2300014: pSphere4
-    3300000: pasted__pasted__pasted__pSphere4
-    3300002: pasted__pasted__pSphere4
-    3300004: pasted__pCylinder3
-    3300006: pasted__pSphere4
-    3300008: pCylinder3
-    3300010: pCylinder4
-    3300012: pSphere3
-    3300014: pSphere4
-    4300000: pasted__pCylinder3
-    4300002: pasted__pasted__pSphere4
-    4300004: pasted__pasted__pasted__pSphere4
-    4300006: pasted__pSphere4
-    4300008: pCylinder3
-    4300010: pSphere4
-    4300012: pCylinder4
-    4300014: pSphere3
+    100000: //RootNode
+    400000: //RootNode
+    2100000: lambert4
+    2100002: lambert5
+    2100004: lambert2
+    2100006: lambert3
+    2100008: lambert1
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pTorus2
   externalObjects: {}
   materials:
     importMaterials: 1

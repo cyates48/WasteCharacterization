@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 114753592896167424}
   m_Layer: 0
   m_Name: watermelon
-  m_TagString: recycle
+  m_TagString: compost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
