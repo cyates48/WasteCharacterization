@@ -424,7 +424,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
-  m_Text: 
+  m_Text: Watermelon
 --- !u!114 &114958755481350050
 MonoBehaviour:
   m_ObjectHideFlags: 1

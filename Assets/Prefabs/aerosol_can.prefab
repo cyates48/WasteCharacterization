@@ -357,7 +357,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
-  m_Text: 
+  m_Text: 'Spray can (aerosol)
+
+'
 --- !u!114 &114405097820900650
 MonoBehaviour:
   m_ObjectHideFlags: 1

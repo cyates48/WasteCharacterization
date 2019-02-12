@@ -165,7 +165,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1628263131554180}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.026, y: 0.8112215, z: -4.256571}
+  m_LocalPosition: {x: 1.026, y: 1.098, z: -4.256571}
   m_LocalScale: {x: 1.1783, y: 1.1783, z: 1.1783}
   m_Children:
   - {fileID: 224494287926729406}
@@ -438,7 +438,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
-  m_Text: 
+  m_Text: Porcelain coffee mug
 --- !u!222 &222242079253574990
 CanvasRenderer:
   m_ObjectHideFlags: 1
