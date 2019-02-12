@@ -439,6 +439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 114715218741552344}
+  offset: 0.2
 --- !u!222 &222881098158940576
 CanvasRenderer:
   m_ObjectHideFlags: 1

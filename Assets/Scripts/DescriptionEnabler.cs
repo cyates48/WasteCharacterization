@@ -6,6 +6,7 @@ using OculusSampleFramework;
 public class DescriptionEnabler : MonoBehaviour {
 
     public DistanceGrabbable item;
+    public float offset;
     Transform m_centerEyeAnchor;
 
 	// Use this for initialization
@@ -22,11 +23,17 @@ public class DescriptionEnabler : MonoBehaviour {
         {
             canvas.enabled = true;
         }
-        else
+        else 
+        {
             canvas.enabled = false;
+        }
 
         RectTransform rtransform = canvas.GetComponent<RectTransform>();
         rtransform.LookAt(m_centerEyeAnchor);
         rtransform.rotation = Quaternion.LookRotation(rtransform.position - m_centerEyeAnchor.position);
+        Vector3 offsetPos = offset * Vector3.Normalize(rtransform.up);
+        rtransform.position = rtransform.parent.position + offsetPos;
+
+        if (item.isGrabbed) Debug.Log(offsetPos);
     }
 }
