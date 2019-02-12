@@ -365,7 +365,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
-  m_Text: 
+  m_Text: Paper towel roll
 --- !u!114 &114317209603335568
 MonoBehaviour:
   m_ObjectHideFlags: 1

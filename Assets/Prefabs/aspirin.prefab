@@ -332,7 +332,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
-  m_Text: 
+  m_Text: This aspirin bottle is composed of different plastics that make it difficult
+    to recycle.
 --- !u!114 &114095931946950564
 MonoBehaviour:
   m_ObjectHideFlags: 1
