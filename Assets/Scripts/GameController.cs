@@ -16,6 +16,15 @@ public class GameController : MonoBehaviour {
     public GameObject timeObj;
     private Text text_time;
 
+    // streak
+    public int streak;
+    public int streakBonus;
+    public GameObject streakNumObj;
+    public GameObject streakBonusObj;
+    private Text text_streak;
+    private Text text_streak_bonus;
+
+
     enum GameState {
     	InProgress,
     	Ending,
@@ -31,10 +40,20 @@ public class GameController : MonoBehaviour {
         text_time = timeObj.GetComponent<Text>();
         gameState = GameState.InProgress;
         UpdateTimerText();
+
+        streak = 0;
+        streakBonus = 0;
+        text_streak = streakNumObj.GetComponent<Text>();
+        text_streak.text = "0";
+        text_streak_bonus = streakBonusObj.GetComponent<Text>();
+        text_streak_bonus.text = "";
+
     }
 
     void Update () {
         text_score.text = totalPoints.ToString();
+        text_streak.text = streak.ToString();
+        text_streak_bonus.text = streakBonus.ToString();
         time_left -= Time.deltaTime;
         UpdateTimerText();
         if (gameState == GameState.InProgress && time_left <= 0) {
@@ -52,10 +71,30 @@ public class GameController : MonoBehaviour {
     }
 
     public void DistributePoints(bool gainPoints) {
-        if (gainPoints)
+        if (gainPoints) {
             totalPoints += 5;
-        else
+            streak += 1;
+            addStreakBonus(streak);
+        }
+        else {
             totalPoints -= 5;
+            streak = 0;
+            streakBonus = 0;
+            text_streak_bonus.text = " ";
+        }
+    }
+
+    void addStreakBonus(int streak) {
+        if (streak >= 30)
+            streakBonus = 15;
+        else if (streak >= 20)
+            streakBonus = 10;
+        else if (streak >= 10)
+            streakBonus = 5;
+
+        if (streakBonus > 4)
+            text_streak_bonus.text = "+ " + streakBonus.ToString();
+        totalPoints += streakBonus;
     }
 
     void StopSpawning() {
