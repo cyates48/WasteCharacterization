@@ -10,6 +10,7 @@ public class GroundController : MonoBehaviour {
 	void OnCollisionEnter(Collision item) {
         if (item.gameObject.tag == "landfill" || item.gameObject.tag == "recycle" || item.gameObject.tag == "compost") {
         	gameController.GetComponent<GameController>().DistributePoints(false);
+        	Destroy(item.gameObject);
         }    
 	}
 }

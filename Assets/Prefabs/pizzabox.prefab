@@ -388,6 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 114087381672424250}
+  offset: 0.2
 --- !u!114 &114805987547788874
 MonoBehaviour:
   m_ObjectHideFlags: 1
