@@ -436,15 +436,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalPoints: 0
-  streak: 0
   score: {fileID: 534480141}
-  streakNum: {fileID: 0}
-  streakBonus: {fileID: 0}
   time_left: 120
   spawner: {fileID: 1171220351}
   conveyorBelt: {fileID: 803818567}
   completeText: {fileID: 1507751225}
   timeObj: {fileID: 988634550}
+  streak: 0
+  streakBonus: 0
+  streakNumObj: {fileID: 1128953766}
+  streakBonusObj: {fileID: 2042282566}
 --- !u!4 &89997030
 Transform:
   m_ObjectHideFlags: 0
