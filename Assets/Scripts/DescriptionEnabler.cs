@@ -33,7 +33,5 @@ public class DescriptionEnabler : MonoBehaviour {
         rtransform.rotation = Quaternion.LookRotation(rtransform.position - m_centerEyeAnchor.position);
         Vector3 offsetPos = offset * Vector3.Normalize(rtransform.up);
         rtransform.position = rtransform.parent.position + offsetPos;
-
-        if (item.isGrabbed) Debug.Log(offsetPos);
     }
 }

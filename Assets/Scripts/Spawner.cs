@@ -10,11 +10,19 @@ public class Spawner : MonoBehaviour {
     Random rng;
 
     string[] trash_types = {"landfill", "recycle", "compost"};
+    Coroutine routine;
 
     // Use this for initialization
     void Start () {
     	rng = new Random();
-        StartCoroutine(spawnItems());
+    }
+
+    public void StartSpawning() {
+        routine = StartCoroutine(spawnItems());
+    }
+
+    public void StopSpawning() {
+        StopCoroutine(routine);
     }
 
     IEnumerator spawnItems() {

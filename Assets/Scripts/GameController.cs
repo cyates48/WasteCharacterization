@@ -9,12 +9,13 @@ public class GameController : MonoBehaviour {
     public int totalPoints;
     public GameObject score;
     public float time_left;
-    public GameObject spawner;
+    public Spawner spawner;
     public ConveyorBelt conveyorBelt;
     private Text text_score;
     public GameObject completeText;
     public GameObject timeObj;
     private Text text_time;
+    public GameObject startBoard, gameBoard;
 
     // streak
     public int streak;
@@ -26,6 +27,7 @@ public class GameController : MonoBehaviour {
 
 
     enum GameState {
+        Waiting,
     	InProgress,
     	Ending,
     	Ended
@@ -38,7 +40,7 @@ public class GameController : MonoBehaviour {
         text_score = score.GetComponent<Text>();
         text_score.text = "0";
         text_time = timeObj.GetComponent<Text>();
-        gameState = GameState.InProgress;
+        gameState = GameState.Waiting;
         UpdateTimerText();
 
         streak = 0;
@@ -53,9 +55,11 @@ public class GameController : MonoBehaviour {
     void Update () {
         text_score.text = totalPoints.ToString();
         text_streak.text = streak.ToString();
-        text_streak_bonus.text = streakBonus.ToString();
-        time_left -= Time.deltaTime;
-        UpdateTimerText();
+        
+        if (gameState == GameState.InProgress) {
+            time_left -= Time.deltaTime;
+            UpdateTimerText();
+        }
         if (gameState == GameState.InProgress && time_left <= 0) {
         	StopSpawning();
         }
@@ -70,11 +74,19 @@ public class GameController : MonoBehaviour {
         text_time.text = string.Format("{0:D2}:{1:D2}", seconds / 60, seconds % 60);
     }
 
+    public void StartGame() {
+        gameBoard.SetActive(true);
+        startBoard.SetActive(false);
+        gameState = GameState.InProgress;
+        spawner.StartSpawning();
+        conveyorBelt.StartBelt();
+    }
+
     public void DistributePoints(bool gainPoints) {
         if (gainPoints) {
             totalPoints += 5;
             streak += 1;
-            addStreakBonus(streak);
+            addStreakBonus();
         }
         else {
             totalPoints -= 5;
@@ -84,7 +96,7 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    void addStreakBonus(int streak) {
+    void addStreakBonus() {
         if (streak >= 30)
             streakBonus = 15;
         else if (streak >= 20)
@@ -93,17 +105,18 @@ public class GameController : MonoBehaviour {
             streakBonus = 5;
 
         if (streakBonus > 4)
-            text_streak_bonus.text = "+ " + streakBonus.ToString();
+            text_streak_bonus.text = "+" + streakBonus.ToString();
         totalPoints += streakBonus;
     }
 
     void StopSpawning() {
     	gameState = GameState.Ending;
-    	spawner.SetActive(false);
+    	spawner.StopSpawning();
     }
 
     void EndLevel() {
     	gameState = GameState.Ended;
     	completeText.SetActive(true);
+        conveyorBelt.StopBelt();
     }
 }

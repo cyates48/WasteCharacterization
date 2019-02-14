@@ -6,15 +6,20 @@ public class BinController : MonoBehaviour {
 
 	public GameObject gameController;
     public bool gainPoints;
+    Queue<GameObject> containedItems;
+    int item_max = 8;
 
 	// Use this for initialization
 	void Start () {
-		
+		containedItems = new Queue<GameObject>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (containedItems.Count > item_max) {
+			GameObject item = containedItems.Dequeue();
+			Destroy(item);
+		}
 	}
 
     // Call the check function when item enters a bin
@@ -30,6 +35,7 @@ public class BinController : MonoBehaviour {
         else
             gainPoints = false;
 
+        containedItems.Enqueue(item.gameObject);
         gameController.GetComponent<GameController>().DistributePoints(gainPoints);
 	}
 }

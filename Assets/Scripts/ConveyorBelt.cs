@@ -10,16 +10,20 @@ public class ConveyorBelt : MonoBehaviour {
     public Material conveyor_mat;
 
     int obj_counter;
+    bool isMoving;
 
 	// Use this for initialization
 	void Start () {
 		obj_counter = 0;
+		isMoving = false;
 	}
 
 	void Update() {
-		Vector2 new_offset = conveyor_mat.mainTextureOffset;
-		new_offset.x -= texture_speed;
-		conveyor_mat.mainTextureOffset = new_offset;
+		if (isMoving) {
+			Vector2 new_offset = conveyor_mat.mainTextureOffset;
+			new_offset.x -= texture_speed;
+			conveyor_mat.mainTextureOffset = new_offset;
+		}
 	}
 
 	void OnCollisionEnter(Collision col) {
@@ -50,5 +54,17 @@ public class ConveyorBelt : MonoBehaviour {
 
 	public bool AreObjectsOnBelt() {
 		return obj_counter > 0;
+	}
+
+	void OnApplicationQuit() {
+		conveyor_mat.mainTextureOffset = new Vector2(0.0f, -0.09f);
+	}
+
+	public void StartBelt() {
+		isMoving = true;
+	}
+
+	public void StopBelt() {
+		isMoving = false;
 	}
 }
