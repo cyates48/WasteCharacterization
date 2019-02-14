@@ -380,7 +380,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
   m_Text: This spoon is made of biodegradable materials. It is not a traditional plastic
-    spoon.f
+    spoon.
 --- !u!114 &114612358339591756
 MonoBehaviour:
   m_ObjectHideFlags: 1
