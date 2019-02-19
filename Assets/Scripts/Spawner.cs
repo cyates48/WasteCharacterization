@@ -17,15 +17,15 @@ public class Spawner : MonoBehaviour {
     	rng = new Random();
     }
 
-    public void StartSpawning(float spawn_interval) {
-        routine = StartCoroutine(spawnItems(spawn_interval));
+    public void StartSpawning() {
+        routine = StartCoroutine(spawnItems());
     }
 
     public void StopSpawning() {
         StopCoroutine(routine);
     }
 
-    IEnumerator spawnItems(float spawn_interval) {
+    IEnumerator spawnItems() {
         while (true) {
             string type = trash_types[rng.Next(trash_types.Length)];
             Vector3 lane_location = lane_locations[rng.Next(lane_locations.Length)];
@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour {
             } while (item.tag != type);
             
             Instantiate(item, lane_location, Quaternion.identity);
-            yield return new WaitForSeconds(spawn_interval);
+            yield return new WaitForSeconds(2f);
         }
     }
 }
