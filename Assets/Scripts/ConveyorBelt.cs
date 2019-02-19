@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ConveyorBelt : MonoBehaviour {
 
-	public float speed;
-    public float texture_speed;
+	private float speed;
+    private float texture_speed;
     public GameObject spawner;
     public Material conveyor_mat;
 
@@ -60,7 +60,9 @@ public class ConveyorBelt : MonoBehaviour {
 		conveyor_mat.mainTextureOffset = new Vector2(0.0f, -0.09f);
 	}
 
-	public void StartBelt() {
+	public void StartBelt(float spd, float tex) {
+		speed = spd;
+		texture_speed = tex;
 		isMoving = true;
 	}
 
