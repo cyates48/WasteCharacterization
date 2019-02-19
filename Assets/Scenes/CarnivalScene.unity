@@ -519,23 +519,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8e2a02ee705d54f9c8d5c182521705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalPoints: 0
-  score: {fileID: 534480141}
-  total_time: 5
-  spawner: {fileID: 1171220352}
   conveyorBelt: {fileID: 803818567}
-  text_level: {fileID: 1512136899}
-  completeText: {fileID: 1507751225}
-  timeObj: {fileID: 988634550}
+  spawner: {fileID: 1171220352}
+  total_time: 5
   startBoard: {fileID: 865088199}
   gameBoard: {fileID: 989707832}
-  streak: 0
-  streakBonus: 0
-  streakNumObj: {fileID: 1128953766}
-  streakBonusObj: {fileID: 2042282566}
-  pointer: {fileID: 571635447}
+  completeText: {fileID: 1507751225}
   replayButton: {fileID: 2021992637}
   nextButton: {fileID: 1062361749}
+  pointer: {fileID: 571635447}
+  text_score: {fileID: 534480143}
+  text_level: {fileID: 1512136899}
+  text_time: {fileID: 988634552}
+  text_streak: {fileID: 1128953768}
+  text_streak_bonus: {fileID: 2042282568}
 --- !u!4 &89997030
 Transform:
   m_ObjectHideFlags: 0
