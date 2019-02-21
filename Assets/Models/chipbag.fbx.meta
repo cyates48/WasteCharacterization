@@ -4,34 +4,13 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: group3
-    100004: group4
-    100006: pCylinder3
-    100008: pPlane1
-    100010: pPlane2
-    100012: pPlane3
     400000: //RootNode
-    400002: group3
-    400004: group4
-    400006: pCylinder3
-    400008: pPlane1
-    400010: pPlane2
-    400012: pPlane3
-    2100000: phong2
+    2100000: lambert2
     2100002: phong1
-    2100004: lambert2
-    2300000: pCylinder3
-    2300002: pPlane1
-    2300004: pPlane2
-    2300006: pPlane3
-    3300000: pCylinder3
-    3300002: pPlane1
-    3300004: pPlane2
-    3300006: pPlane3
-    4300000: pPlane1
-    4300002: pCylinder3
-    4300004: pPlane3
-    4300006: pPlane2
+    2100004: phong2
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pPlane3
   externalObjects: {}
   materials:
     importMaterials: 1
