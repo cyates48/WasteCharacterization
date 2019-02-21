@@ -30,6 +30,10 @@ public class GameController : MonoBehaviour {
     private int streakBonus;
     public Text text_streak;
     public Text text_streak_bonus;
+
+    // Sounds
+    public AudioSource audiosrc;
+    public AudioClip timer_sfx, right_sfx, wrong_sfx, done_sfx;
     
     // Levels
     public struct Level {
@@ -127,12 +131,14 @@ public class GameController : MonoBehaviour {
             totalPoints += 5;
             streak += 1;
             addStreakBonus();
+            audiosrc.PlayOneShot(right_sfx);
         }
         else {
             totalPoints -= 5;
             streak = 0;
             streakBonus = 0;
             text_streak_bonus.text = " ";
+            audiosrc.PlayOneShot(wrong_sfx);
         }
     }
 
@@ -153,6 +159,7 @@ public class GameController : MonoBehaviour {
     void StopSpawning() {
         gameState = GameState.Ending;
         spawner.StopSpawning();
+        audiosrc.PlayOneShot(timer_sfx);
     }
 
     void EndLevel() {
@@ -165,6 +172,8 @@ public class GameController : MonoBehaviour {
         if (current_level + 1 < levels.Length) {
             nextButton.SetActive(true);
         }
+
+        audiosrc.PlayOneShot(done_sfx);
     }
 
     public void NextLevel() {
