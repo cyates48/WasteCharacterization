@@ -825,7 +825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conveyorBelt: {fileID: 803818567}
   spawner: {fileID: 1171220352}
-  total_time: 1
+  total_time: 120
   startBoard: {fileID: 865088199}
   gameBoard: {fileID: 989707832}
   completeText: {fileID: 1507751225}
