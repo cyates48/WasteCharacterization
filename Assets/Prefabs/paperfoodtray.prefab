@@ -381,7 +381,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
-  m_Text: 'This plate is made of styrofoam (plastic #6)'
+  m_Text: This is a used paper food tray
 --- !u!114 &114756710059574190
 MonoBehaviour:
   m_ObjectHideFlags: 1
