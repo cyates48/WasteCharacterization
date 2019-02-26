@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using OculusSampleFramework;
 
 public class BinController : MonoBehaviour {
 
@@ -37,5 +38,6 @@ public class BinController : MonoBehaviour {
 
         containedItems.Enqueue(item.gameObject);
         gameController.GetComponent<GameController>().DistributePoints(gainPoints);
+        item.gameObject.GetComponent<DistanceGrabbable>().enabled = false;
 	}
 }
