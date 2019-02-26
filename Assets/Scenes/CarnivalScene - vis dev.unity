@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1037074513}
-  m_IndirectSpecularColor: {r: 0.4482469, g: 0.4982739, b: 0.57558453, a: 1}
+  m_IndirectSpecularColor: {r: 0.4482469, g: 0.49827397, b: 0.57558453, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3326,7 +3326,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4669234126623968, guid: 0242aa8515b4bc947a945a5c6df83ee9, type: 2}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
       value: -0.924501
+=======
+      value: 0
+>>>>>>> 6c4291b8b7f2644aa110d2f490983aaf733d6f97
       objectReference: {fileID: 0}
     - target: {fileID: 4669234126623968, guid: 0242aa8515b4bc947a945a5c6df83ee9, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6823,7 +6827,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.21
+      value: 0.40964484
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6831,7 +6835,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -5.63
+      value: -6.6359053
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_LocalRotation.x
@@ -12530,7 +12534,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4580194091363106, guid: 6fae51a9f4170334e8639e8dbfc0a54b, type: 2}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
       value: -0.92450106
+=======
+      value: 0
+>>>>>>> 6c4291b8b7f2644aa110d2f490983aaf733d6f97
       objectReference: {fileID: 0}
     - target: {fileID: 4580194091363106, guid: 6fae51a9f4170334e8639e8dbfc0a54b, type: 2}
       propertyPath: m_LocalRotation.x
