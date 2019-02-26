@@ -9816,7 +9816,11 @@ MonoBehaviour:
   - {fileID: 1034468001185534, guid: bf3f0ca895579dd4a8e6f680f50eb962, type: 2}
   - {fileID: 1376676171891482, guid: ba114eae70dc8714ebab495a3fe61fa6, type: 2}
   - {fileID: 1328283877445834, guid: aaba8c1b9ed6ab140a35cca2374c7952, type: 2}
+  - {fileID: 1633329386844308, guid: 73e2820ca63035144b99122eb2fd57b1, type: 2}
   - {fileID: 1046318105492756, guid: 41b28ff98aacd6b4ba0804fe80b07b60, type: 2}
+  - {fileID: 1092658984042298, guid: 2ee683e3fc0407d4ba7a8434da788b1a, type: 2}
+  - {fileID: 1880659068451860, guid: 97320fc6abf6b494d97f47d98c1d92fa, type: 2}
+  - {fileID: 1888804399075800, guid: 88358ae18029f304e8570d275ab47187, type: 2}
   lane_locations:
   - {x: -2.385, y: 2.961, z: -4.431731}
   - {x: -2.385, y: 2.961, z: -3.893863}
