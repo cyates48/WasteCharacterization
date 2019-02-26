@@ -50,6 +50,9 @@ public class ConveyorBelt : MonoBehaviour {
 
 	void OnCollisionExit(Collision col) {
 		obj_counter--;
+
+		Rigidbody rb = col.rigidbody;
+		rb.AddTorque(1.0f * Vector3.forward);
 	}
 
 	public bool AreObjectsOnBelt() {
