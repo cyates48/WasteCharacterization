@@ -1,24 +1,64 @@
 fileFormatVersion: 2
-guid: 6fc569e5687869244a626539ad7125c9
+guid: 0f47a819b77d3714b94ca6c0837aa243
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: group1
-    100002: //RootNode
-    100004: pCube5
-    100006: pCube8
-    400000: group1
-    400002: //RootNode
-    400004: pCube5
-    400006: pCube8
-    2100000: lambert3
-    2100002: lambert1
-    2100004: lambert2
-    2100006: phong1
-    2100008: lambert4
-    2300000: pCube5
-    3300000: pCube5
-    4300000: pCube5
+    100000: group2
+    100002: group3
+    100004: group4
+    100006: //RootNode
+    100008: pasted__group
+    100010: pasted__pasted__pCylinder2
+    100012: pasted__pasted__pSphere6
+    100014: pasted__pasted__transform3
+    100016: pasted__pasted__transform4
+    100018: pasted__pCylinder1
+    100020: pasted__pCylinder2
+    100022: pasted__pCylinder2 1
+    100024: pasted__pSphere5
+    100026: pasted__pSphere6
+    100028: pasted__pSphere6 1
+    100030: pasted__transform1
+    100032: pasted__transform2
+    100034: pasted__transform3
+    100036: pasted__transform3 1
+    100038: pasted__transform4
+    100040: pasted__transform4 1
+    100042: pSphere12
+    400000: group2
+    400002: group3
+    400004: group4
+    400006: //RootNode
+    400008: pasted__group
+    400010: pasted__pasted__pCylinder2
+    400012: pasted__pasted__pSphere6
+    400014: pasted__pasted__transform3
+    400016: pasted__pasted__transform4
+    400018: pasted__pCylinder1
+    400020: pasted__pCylinder2
+    400022: pasted__pCylinder2 1
+    400024: pasted__pSphere5
+    400026: pasted__pSphere6
+    400028: pasted__pSphere6 1
+    400030: pasted__transform1
+    400032: pasted__transform2
+    400034: pasted__transform3
+    400036: pasted__transform3 1
+    400038: pasted__transform4
+    400040: pasted__transform4 1
+    400042: pSphere12
+    2100000: phong5
+    2100002: lambert4
+    2100004: lambert1
+    2100006: phong2
+    2100008: phong3
+    2100010: pasted__phong2
+    2100012: lambert3
+    2100014: phong4
+    2100016: phong1
+    2300000: pSphere12
+    3300000: pSphere12
+    4300000: pSphere12
   externalObjects: {}
   materials:
     importMaterials: 1
