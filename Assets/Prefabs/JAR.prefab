@@ -106,8 +106,12 @@ GameObject:
   - component: {fileID: 4185497284567836}
   - component: {fileID: 33953081388473880}
   - component: {fileID: 23703824523257018}
+  - component: {fileID: 54962246393533236}
+  - component: {fileID: 65732256600471492}
+  - component: {fileID: 114756755650614510}
+  - component: {fileID: 114314083202278384}
   m_Layer: 0
-  m_Name: JAR
+  m_Name: jar
   m_TagString: recycle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -269,6 +273,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1888804399075800}
   m_Mesh: {fileID: 4300000, guid: 2898ea5e47b6ceb4292f67c194b288fd, type: 3}
+--- !u!54 &54962246393533236
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1888804399075800}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65732256600471492
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1888804399075800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08077276, y: 0.09890909, z: 0.08072967}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114032264267391672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -352,6 +383,36 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114314083202278384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1888804399075800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_materialColorField: 
+--- !u!114 &114756755650614510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1888804399075800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d00d4ecfeb0e8b4588d82ca818423ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 114314083202278384}
+  offset: 0
 --- !u!114 &114840441721018684
 MonoBehaviour:
   m_ObjectHideFlags: 1

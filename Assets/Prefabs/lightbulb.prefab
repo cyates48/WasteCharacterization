@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 114817437903703154}
   m_Layer: 0
   m_Name: lightbulb
-  m_TagString: landfill
+  m_TagString: ewaste
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

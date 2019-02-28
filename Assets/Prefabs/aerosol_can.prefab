@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 114405097820900650}
   m_Layer: 0
   m_Name: aerosol_can
-  m_TagString: landfill
+  m_TagString: hazardous
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
