@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 114913888863227666}
   m_Layer: 0
   m_Name: batteries
-  m_TagString: ewaste
+  m_TagString: hazardous
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -426,7 +426,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
-  m_Text: 
+  m_Text: 'Batteries
+
+'
 --- !u!114 &114913888863227666
 MonoBehaviour:
   m_ObjectHideFlags: 1

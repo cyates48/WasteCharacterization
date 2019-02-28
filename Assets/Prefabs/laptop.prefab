@@ -402,7 +402,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
-  m_Text: 
+  m_Text: Laptop
 --- !u!114 &114605272975048922
 MonoBehaviour:
   m_ObjectHideFlags: 1
