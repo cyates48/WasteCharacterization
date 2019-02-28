@@ -9,6 +9,8 @@ TagManager:
   - compost
   - score
   - ground
+  - ewaste
+  - hazardous
   layers:
   - Default
   - TransparentFX
