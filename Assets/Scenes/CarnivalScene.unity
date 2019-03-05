@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1037074513}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.091780774, g: 0.09365333, b: 0.14808753, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3280,7 +3280,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 89997028}
-  gainPoints: 0
 --- !u!64 &300013292
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9112,7 +9111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 89997028}
-  gainPoints: 0
 --- !u!114 &818659478 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114956354361317420, guid: 6fae51a9f4170334e8639e8dbfc0a54b,
@@ -9346,7 +9344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 89997028}
-  gainPoints: 0
 --- !u!1 &835582762
 GameObject:
   m_ObjectHideFlags: 0
@@ -10144,7 +10141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 89997028}
-  gainPoints: 0
 --- !u!1 &857707720
 GameObject:
   m_ObjectHideFlags: 0
@@ -13163,7 +13159,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 89997028}
-  gainPoints: 0
 --- !u!64 &1189870283
 MeshCollider:
   m_ObjectHideFlags: 0
