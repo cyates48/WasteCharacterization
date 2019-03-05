@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 114756755650614510}
   - component: {fileID: 114314083202278384}
   m_Layer: 0
-  m_Name: jar
+  m_Name: JAR
   m_TagString: recycle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,8 +139,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1888804399075800}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000009200573, y: 1.2431759, z: -4.54}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.0148, y: 1.0538, z: -3.7823942}
+  m_LocalScale: {x: 1.5743, y: 1.5743, z: 1.5743}
   m_Children:
   - {fileID: 224261838629362928}
   - {fileID: 4420494905339504}
@@ -238,8 +238,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 2898ea5e47b6ceb4292f67c194b288fd, type: 3}
-  - {fileID: 2100002, guid: 2898ea5e47b6ceb4292f67c194b288fd, type: 3}
+  - {fileID: 2100000, guid: f9828f3d126bb3945b892e2fcd57d426, type: 2}
+  - {fileID: 2100000, guid: 68c52cd2773eab14ba0107084c87ad75, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 114314083202278384}
-  offset: 0
+  offset: 0.2
 --- !u!114 &114840441721018684
 MonoBehaviour:
   m_ObjectHideFlags: 1

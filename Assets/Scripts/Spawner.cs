@@ -9,7 +9,8 @@ public class Spawner : MonoBehaviour {
     public Vector3[] lane_locations;
     Random rng;
 
-    string[] trash_types = {"landfill", "recycle", "compost"};
+    string[] basic_trash_types = {"landfill", "recycle", "compost"};
+    string[] all_trash_types = {"landfill", "recycle", "compost", "ewaste", "hazardous"};
     Coroutine routine;
 
     // Use this for initialization
@@ -17,15 +18,23 @@ public class Spawner : MonoBehaviour {
     	rng = new Random();
     }
 
-    public void StartSpawning(float spawn_interval) {
-        routine = StartCoroutine(spawnItems(spawn_interval));
+    public void StartSpawning(float spawn_interval, bool use_extra_bins) {
+        routine = StartCoroutine(spawnItems(spawn_interval, use_extra_bins));
     }
 
     public void StopSpawning() {
         StopCoroutine(routine);
     }
 
-    IEnumerator spawnItems(float spawn_interval) {
+    IEnumerator spawnItems(float spawn_interval, bool use_extra_bins) {
+    	string[] trash_types;
+    	if (use_extra_bins) {
+    		trash_types = all_trash_types;
+    	}
+    	else {
+    		trash_types = basic_trash_types;
+    	}
+
         while (true) {
             string type = trash_types[rng.Next(trash_types.Length)];
             Vector3 lane_location = lane_locations[rng.Next(lane_locations.Length)];

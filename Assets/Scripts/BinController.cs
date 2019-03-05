@@ -6,7 +6,6 @@ using OculusSampleFramework;
 public class BinController : MonoBehaviour {
 
 	public GameObject gameController;
-    public bool gainPoints;
     Queue<GameObject> containedItems;
     int item_max = 8;
 
@@ -25,16 +24,11 @@ public class BinController : MonoBehaviour {
 
     // Call the check function when item enters a bin
 	void OnTriggerEnter(Collider item) {
+        bool gainPoints;
         if (item.name=="DetectGrabRange" || item.name=="GrabVolumeCone" || item.name=="GrabVolumeSmall" || item.name=="GrabVolumeBig" || item.name=="OVRPlayerController")
             return;
-        else if (gameObject.tag == "landfill" && item.tag == "landfill")
-            gainPoints = true;
-        else if (gameObject.tag == "recycle" && item.tag == "recycle")
-            gainPoints = true;
-        else if (gameObject.tag == "compost" && item.tag == "compost")
-            gainPoints = true;
         else
-            gainPoints = false;
+            gainPoints = gameObject.tag == item.tag;
 
         containedItems.Enqueue(item.gameObject);
         gameController.GetComponent<GameController>().DistributePoints(gainPoints);

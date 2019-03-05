@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 114465825383018534}
   - component: {fileID: 114459569234394132}
   m_Layer: 0
-  m_Name: juicecarton
+  m_Name: JUICECARTON
   m_TagString: recycle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,8 +167,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1880659068451860}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.25, z: -4.54}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.7741, y: 1.1313, z: -3.6664128}
+  m_LocalScale: {x: 2.7584724, y: 2.7584724, z: 2.7584724}
   m_Children:
   - {fileID: 224903152179096452}
   - {fileID: 4781551378466078}
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 114459569234394132}
-  offset: 0
+  offset: 0.2
 --- !u!114 &114620772326250932
 MonoBehaviour:
   m_ObjectHideFlags: 1

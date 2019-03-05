@@ -34,17 +34,27 @@ public class GameController : MonoBehaviour {
     // Sounds
     public AudioSource audiosrc;
     public AudioClip timer_sfx, right_sfx, wrong_sfx, done_sfx;
+
+    // Extra bins and walls and tuts
+    public GameObject EWasteBin, HHWBin;
+    public GameObject CloseWall, FarWall;
+    public GameObject[] tuts;
+    int tut_index;
     
     // Levels
     public struct Level {
         public float spawn_interval;
         public float conveyor_speed;
         public float conv_tex_speed;
+        public bool use_extra_bins;
+        public bool has_tut;
 
-        public Level(float x1, float x2, float x3) {
+        public Level(float x1, float x2, float x3, bool x4 = false, bool x5 = false) {
             spawn_interval = x1;
             conveyor_speed = x2;
             conv_tex_speed = x3;
+            use_extra_bins = x4;
+            has_tut = x5;
         }
     }
     Level[] levels;
@@ -62,12 +72,14 @@ public class GameController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         gameState = GameState.Waiting;
-        levels = new Level[3];
+        levels = new Level[4];
         levels[0] = new Level(3.0f, 1.0f, 0.0005f);
         levels[1] = new Level(2.5f, 1.5f, 0.0010f);
-        levels[2] = new Level(1.75f, 2.0f, 0.0015f);
+        levels[2] = new Level(2.5f, 1.5f, 0.0010f, true, true);
+        levels[3] = new Level(1.75f, 2.0f, 0.0015f, true);
         current_level = 0;
         text_level.text = "Level 1";
+        tut_index = 0;
     }
 
     // Called every frame
@@ -121,7 +133,7 @@ public class GameController : MonoBehaviour {
         nextButton.SetActive(false);
 
         // Start the conveyor belt and spawner
-        spawner.StartSpawning(level.spawn_interval);
+        spawner.StartSpawning(level.spawn_interval, level.use_extra_bins);
         conveyorBelt.StartBelt(level.conveyor_speed, level.conv_tex_speed);
     }
 
@@ -176,10 +188,28 @@ public class GameController : MonoBehaviour {
         audiosrc.PlayOneShot(done_sfx);
     }
 
-    public void NextLevel() {
+    public void NextLevel(bool ignore_tut = false) {
         current_level += 1;
         text_level.text = string.Format("Level {0}", current_level + 1);
-        StartGame(current_level);
+
+        Level level = levels[current_level]; 
+
+        if (!level.has_tut || ignore_tut) {
+            StartGame(current_level);
+        } else {
+            current_level -= 1;
+            gameBoard.SetActive(false);
+            tuts[tut_index].SetActive(true);
+            tut_index += 1;
+
+            if (level.use_extra_bins) {
+                // Enable/disable based on level types
+                HHWBin.SetActive(level.use_extra_bins);
+                EWasteBin.SetActive(level.use_extra_bins);
+                CloseWall.SetActive(!level.use_extra_bins);
+                FarWall.SetActive(level.use_extra_bins);
+            }
+        }
     }
 
     public void ReplayLevel() {
