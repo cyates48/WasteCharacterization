@@ -61,13 +61,13 @@ public class GameController : MonoBehaviour {
     private int current_level;
 
     // Game state
-    enum GameState {
+    public enum GameState {
         Waiting,
         InProgress,
         Ending,
         Ended
     }
-    GameState gameState;
+    public GameState gameState;
 
     // Use this for initialization
     void Start () {
@@ -101,6 +101,8 @@ public class GameController : MonoBehaviour {
             // Items are off belt so stop spawning
             EndLevel();
         }
+
+        getAudienceActions(gameState);
     }
 
     // Format and update the timer text
@@ -144,6 +146,7 @@ public class GameController : MonoBehaviour {
             streak += 1;
             addStreakBonus();
             audiosrc.PlayOneShot(right_sfx);
+            audienceApplause();
         }
         else {
             totalPoints -= 5;
@@ -151,6 +154,7 @@ public class GameController : MonoBehaviour {
             streakBonus = 0;
             text_streak_bonus.text = " ";
             audiosrc.PlayOneShot(wrong_sfx);
+            audienceBoo();
         }
     }
 
