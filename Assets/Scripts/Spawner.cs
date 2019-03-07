@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour {
 
     public GameObject[] trash_items;
     public Vector3[] lane_locations;
+    public GameController gameController;
     Random rng;
 
     string[] basic_trash_types = {"landfill", "recycle", "compost"};
@@ -45,6 +46,7 @@ public class Spawner : MonoBehaviour {
             } while (item.tag != type);
             
             Instantiate(item, lane_location, Quaternion.identity);
+            gameController.OnObjectSpawned();
             yield return new WaitForSeconds(spawn_interval);
         }
     }

@@ -70,6 +70,11 @@ public class GameController : MonoBehaviour {
     }
     public GameState gameState;
 
+    // Object trackers
+    int obj_counter;
+    Queue<GameObject> objs_to_delete;
+    List<GameObject> scored_objs;
+
     // Use this for initialization
     void Start () {
         gameState = GameState.Waiting;
@@ -81,6 +86,9 @@ public class GameController : MonoBehaviour {
         current_level = 0;
         text_level.text = "Level 1";
         tut_index = 0;
+        obj_counter = 0;
+        objs_to_delete = new Queue<GameObject>();
+        scored_objs = new List<GameObject>();
     }
 
     // Called every frame
@@ -98,7 +106,7 @@ public class GameController : MonoBehaviour {
             // Time is out so stop spawning
             StopSpawning();
         }
-        else if (gameState == GameState.Ending && !conveyorBelt.AreObjectsOnBelt()) {
+        else if (gameState == GameState.Ending && obj_counter <= 0) {
             // Items are off belt so stop spawning
             EndLevel();
         }
@@ -141,7 +149,13 @@ public class GameController : MonoBehaviour {
     }
 
     // Add/remove points
-    public void DistributePoints(bool gainPoints) {
+    public void DistributePoints(bool gainPoints, GameObject obj) {
+        if (scored_objs.Contains(obj))
+            return;
+
+        if (!(obj.tag == "landfill" || obj.tag == "recycle" || obj.tag == "compost" || obj.tag == "ewaste" || obj.tag == "hazardous"))
+            return;
+
         if (gainPoints) {
             totalPoints += 5;
             streak += 1;
@@ -157,6 +171,10 @@ public class GameController : MonoBehaviour {
             audiosrc.PlayOneShot(wrong_sfx);
             audienceReaction.audienceBoo();
         }
+        obj_counter--;
+        objs_to_delete.Enqueue(obj);
+        scored_objs.Add(obj);
+        Invoke("DeleteObject", 2.0f);
     }
 
     // Add extra points based on the streak
@@ -219,5 +237,13 @@ public class GameController : MonoBehaviour {
 
     public void ReplayLevel() {
         StartGame(current_level);
+    }
+
+    public void OnObjectSpawned() {
+        obj_counter++;
+    }
+
+    void DeleteObject() {
+        Destroy(objs_to_delete.Dequeue());
     }
 }
