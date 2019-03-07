@@ -62,13 +62,13 @@ public class GameController : MonoBehaviour {
     private int current_level;
 
     // Game state
-    public enum GameState {
+    enum GameState {
         Waiting,
         InProgress,
         Ending,
         Ended
     }
-    public GameState gameState;
+    GameState gameState;
 
     // Use this for initialization
     void Start () {
@@ -103,7 +103,8 @@ public class GameController : MonoBehaviour {
             EndLevel();
         }
 
-        //getAudienceActions(gameState);
+        if (gameState == GameState.Waiting || gameState == GameState.Ended)
+            audienceReaction.audienceIdle();
     }
 
     // Format and update the timer text
