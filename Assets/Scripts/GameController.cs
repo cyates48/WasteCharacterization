@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour {
     // MonoBehaviours
     public ConveyorBelt conveyorBelt;
     public Spawner spawner;
+    public AudienceReaction audienceReaction;
 
     // time
     public float total_time;
@@ -102,7 +103,7 @@ public class GameController : MonoBehaviour {
             EndLevel();
         }
 
-        getAudienceActions(gameState);
+        //getAudienceActions(gameState);
     }
 
     // Format and update the timer text
@@ -146,7 +147,7 @@ public class GameController : MonoBehaviour {
             streak += 1;
             addStreakBonus();
             audiosrc.PlayOneShot(right_sfx);
-            audienceApplause();
+            audienceReaction.audienceApplause();
         }
         else {
             totalPoints -= 5;
@@ -154,7 +155,7 @@ public class GameController : MonoBehaviour {
             streakBonus = 0;
             text_streak_bonus.text = " ";
             audiosrc.PlayOneShot(wrong_sfx);
-            audienceBoo();
+            audienceReaction.audienceBoo();
         }
     }
 

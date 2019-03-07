@@ -6,15 +6,7 @@ public class AudienceReaction : MonoBehaviour {
 
     public GameObject[] audience;
     public Animation tempPerson;
-
-    enum GameState
-    {
-        Waiting,
-        InProgress,
-        Ending,
-        Ended
-    }
-    GameState gameState;
+    public GameController gameController;
 
     enum AudienceState
     {
@@ -29,16 +21,16 @@ public class AudienceReaction : MonoBehaviour {
         audienceState = AudienceState.Idle;
 	}
 
-    public void getAudienceAction(GameState state) {
-        if ((state == GameState.Waiting ||
-            state == GameState.Ended)
-            && audienceState == AudienceState.Idle) {
-            for (int i = 0; i < audience.Length; i++)
-            {
-                audience[i].GetComponent<Animation>().Play("idle");
-            }
-        }
-    }
+   // public void getAudienceAction(gameController.GameState state) {
+        //if ((state == gameController.GameState.Waiting ||
+          //  state == gameController.GameState.Ended)
+         //   && audienceState == AudienceState.Idle) {
+         //   for (int i = 0; i < audience.Length; i++)
+          //  {
+         //       audience[i].GetComponent<Animation>().Play("idle");
+         //   }
+        //}
+    //}
 	
 	// Applaud when player puts item correctly
 	public void audienceApplause() {
