@@ -9,12 +9,10 @@ public class ConveyorBelt : MonoBehaviour {
     public GameObject spawner;
     public Material conveyor_mat;
 
-    int obj_counter;
     bool isMoving;
 
 	// Use this for initialization
 	void Start () {
-		obj_counter = 0;
 		isMoving = false;
 	}
 
@@ -24,10 +22,6 @@ public class ConveyorBelt : MonoBehaviour {
 			new_offset.x -= texture_speed;
 			conveyor_mat.mainTextureOffset = new_offset;
 		}
-	}
-
-	void OnCollisionEnter(Collision col) {
-		obj_counter++;
 	}
 	
 	void OnCollisionStay(Collision col) {
@@ -49,14 +43,8 @@ public class ConveyorBelt : MonoBehaviour {
 	}
 
 	void OnCollisionExit(Collision col) {
-		obj_counter--;
-
 		Rigidbody rb = col.rigidbody;
 		rb.AddTorque(1.0f * Vector3.forward);
-	}
-
-	public bool AreObjectsOnBelt() {
-		return obj_counter > 0;
 	}
 
 	void OnApplicationQuit() {

@@ -9,7 +9,7 @@ public class GroundController : MonoBehaviour {
     // Call the check function when item hits the ground
 	void OnCollisionEnter(Collision item) {
         if (item.gameObject.tag == "landfill" || item.gameObject.tag == "recycle" || item.gameObject.tag == "compost") {
-        	gameController.GetComponent<GameController>().DistributePoints(false);
+        	gameController.GetComponent<GameController>().DistributePoints(false, item.gameObject);
         	Destroy(item.gameObject);
         }    
 	}
